@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Pravakar Gurung ✦ Creative Software Engineer & Full-Stack Hacker</title>
-  <meta name="description" content="Portfolio of Pravakar Gurung, Full-Stack Software Engineer specializing in Python, JavaScript, React, FastAPI, Django, and Creative Systems.">
+  <title>Pravakar Gurung</title>
+  <meta name="description"
+    content="Portfolio of Pravakar Gurung, Full-Stack Software Engineer specializing in Python, JavaScript, React, FastAPI, Django, and Creative Systems.">
 
   <!-- Quirky & Trendy Modern Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800;900&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700;800;900&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     /* ==========================================================================
@@ -22,11 +27,11 @@
       --surface: #18192c;
       --border: #2e3150;
       --hard-border: 2.5px solid #ff4d8d;
-      
+
       --fg: #ffffff;
       --fg-muted: #a3a8cc;
       --fg-dark: #090910;
-      
+
       /* Vibrant Funky Palette */
       --pink: #ff2a85;
       --cyan: #00f0ff;
@@ -39,12 +44,12 @@
       --brutal-shadow-pink: 5px 5px 0px #ff2a85;
       --brutal-shadow-cyan: 5px 5px 0px #00f0ff;
       --brutal-shadow-purple: 5px 5px 0px #8b5cf6;
-      
+
       --font-display: 'Space Grotesk', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --font-hand: 'Caveat', cursive;
-      
+
       --radius-sm: 8px;
       --radius-md: 16px;
       --radius-lg: 26px;
@@ -65,7 +70,9 @@
     }
 
     /* Reset & Base Setup */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -99,6 +106,7 @@
       transition: transform 0.08s ease, width 0.2s, height 0.2s, background-color 0.2s;
       mix-blend-mode: difference;
     }
+
     .custom-cursor-follower {
       position: fixed;
       width: 40px;
@@ -132,6 +140,7 @@
       opacity: 0.35;
       animation: morphBlob 18s ease-in-out infinite alternate;
     }
+
     .blob-1 {
       width: 450px;
       height: 450px;
@@ -139,6 +148,7 @@
       top: -100px;
       left: -100px;
     }
+
     .blob-2 {
       width: 420px;
       height: 420px;
@@ -147,6 +157,7 @@
       right: -100px;
       animation-delay: -5s;
     }
+
     .blob-3 {
       width: 400px;
       height: 400px;
@@ -157,9 +168,17 @@
     }
 
     @keyframes morphBlob {
-      0% { transform: scale(1) translate(0px, 0px) rotate(0deg); }
-      50% { transform: scale(1.15) translate(60px, 40px) rotate(90deg); }
-      100% { transform: scale(0.9) translate(-40px, 70px) rotate(180deg); }
+      0% {
+        transform: scale(1) translate(0px, 0px) rotate(0deg);
+      }
+
+      50% {
+        transform: scale(1.15) translate(60px, 40px) rotate(90deg);
+      }
+
+      100% {
+        transform: scale(0.9) translate(-40px, 70px) rotate(180deg);
+      }
     }
 
     .w {
@@ -183,10 +202,29 @@
       transform: rotate(-2deg);
       user-select: none;
     }
-    .sticker-yellow { background: var(--yellow); color: #000; }
-    .sticker-pink { background: var(--pink); color: #fff; transform: rotate(3deg); }
-    .sticker-cyan { background: var(--cyan); color: #000; transform: rotate(-3deg); }
-    .sticker-lime { background: var(--lime); color: #000; transform: rotate(2deg); }
+
+    .sticker-yellow {
+      background: var(--yellow);
+      color: #000;
+    }
+
+    .sticker-pink {
+      background: var(--pink);
+      color: #fff;
+      transform: rotate(3deg);
+    }
+
+    .sticker-cyan {
+      background: var(--cyan);
+      color: #000;
+      transform: rotate(-3deg);
+    }
+
+    .sticker-lime {
+      background: var(--lime);
+      color: #000;
+      transform: rotate(2deg);
+    }
 
     /* Infinite Marquee Ticker */
     .marquee-container {
@@ -206,21 +244,29 @@
       user-select: none;
       transform: rotate(-1deg);
       margin: 30px 0 20px;
-      box-shadow: 0 6px 0px rgba(0,0,0,0.25);
+      box-shadow: 0 6px 0px rgba(0, 0, 0, 0.25);
     }
+
     .marquee-content {
       display: inline-flex;
       gap: 30px;
       animation: marqueeRun 24s linear infinite;
     }
+
     .marquee-content span {
       display: inline-flex;
       align-items: center;
       gap: 12px;
     }
+
     @keyframes marqueeRun {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
     }
 
     /* Navbar */
@@ -239,11 +285,13 @@
       padding: 10px 24px;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     nav .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     .brand-logo {
       display: flex;
       align-items: center;
@@ -254,6 +302,7 @@
       font-weight: 900;
       font-size: 1.3rem;
     }
+
     .brand-avatar-mini {
       width: 40px;
       height: 40px;
@@ -263,6 +312,7 @@
       box-shadow: 2px 2px 0px #000;
       transition: transform 0.25s;
     }
+
     .brand-avatar-mini:hover {
       transform: scale(1.15) rotate(8deg);
     }
@@ -272,6 +322,7 @@
       align-items: center;
       gap: 24px;
     }
+
     .nav-links a {
       color: var(--fg);
       text-decoration: none;
@@ -282,6 +333,7 @@
       border-radius: 12px;
       transition: all 0.2s ease;
     }
+
     .nav-links a:hover {
       background: var(--yellow);
       color: #000;
@@ -294,6 +346,7 @@
       align-items: center;
       gap: 12px;
     }
+
     .funky-icon-btn {
       width: 42px;
       height: 42px;
@@ -308,13 +361,17 @@
       box-shadow: 3px 3px 0px var(--border);
       transition: all 0.2s;
     }
+
     .funky-icon-btn:hover {
       background: var(--pink);
       color: #fff;
       transform: translate(-2px, -2px);
       box-shadow: 5px 5px 0px #000;
     }
-    .hamburger { display: none; }
+
+    .hamburger {
+      display: none;
+    }
 
     /* Funky Action Buttons */
     .btn-funky {
@@ -335,41 +392,49 @@
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
     }
+
     .btn-funky-yellow {
       background: var(--yellow);
       color: #000 !important;
       box-shadow: 4px 4px 0px #000;
     }
+
     .btn-funky-yellow:hover {
       transform: translate(-3px, -3px);
       box-shadow: 7px 7px 0px #000;
       background: #fff;
     }
+
     .btn-funky-pink {
       background: var(--pink);
       color: #fff !important;
       box-shadow: 4px 4px 0px #000;
     }
+
     .btn-funky-pink:hover {
       transform: translate(-3px, -3px);
       box-shadow: 7px 7px 0px #000;
       background: #ff559f;
     }
+
     .btn-funky-cyan {
       background: var(--cyan);
       color: #000 !important;
       box-shadow: 4px 4px 0px #000;
     }
+
     .btn-funky-cyan:hover {
       transform: translate(-3px, -3px);
       box-shadow: 7px 7px 0px #000;
     }
+
     .btn-funky-outline {
       background: var(--surface);
       color: var(--fg) !important;
       border: 2px solid var(--border);
       box-shadow: 4px 4px 0px var(--border);
     }
+
     .btn-funky-outline:hover {
       background: var(--yellow);
       color: #000 !important;
@@ -382,6 +447,7 @@
     .hero {
       padding: 60px 0 40px;
     }
+
     .hero-wrapper {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
@@ -403,14 +469,26 @@
       font-family: var(--font-display);
       margin-bottom: 22px;
     }
+
     .blinking-emoji {
       animation: wiggle 1.2s infinite ease-in-out;
       display: inline-block;
     }
+
     @keyframes wiggle {
-      0%, 100% { transform: rotate(0deg); }
-      25% { transform: rotate(-14deg); }
-      75% { transform: rotate(14deg); }
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(-14deg);
+      }
+
+      75% {
+        transform: rotate(14deg);
+      }
     }
 
     h1.hero-title {
@@ -421,12 +499,14 @@
       letter-spacing: -0.04em;
       margin-bottom: 20px;
     }
+
     .funky-highlight-pink {
       color: var(--pink);
       position: relative;
       display: inline-block;
-      text-shadow: 3px 3px 0px rgba(0,0,0,0.4);
+      text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.4);
     }
+
     .funky-highlight-cyan {
       color: var(--cyan);
       background: rgba(0, 240, 255, 0.12);
@@ -434,12 +514,14 @@
       padding: 0 6px;
       border-radius: 6px;
     }
+
     .typed-wrapper {
       color: var(--yellow);
       font-family: var(--font-mono);
       font-weight: 800;
       border-bottom: 3px dashed var(--yellow);
     }
+
     .typing-cursor {
       display: inline-block;
       width: 4px;
@@ -447,7 +529,18 @@
       margin-left: 4px;
       animation: blink 0.8s infinite;
     }
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
 
     .hero-speech-bubble {
       position: relative;
@@ -461,6 +554,7 @@
       margin-bottom: 30px;
       line-height: 1.6;
     }
+
     .hero-speech-bubble::before {
       content: '';
       position: absolute;
@@ -487,6 +581,7 @@
       justify-content: center;
       align-items: center;
     }
+
     .polaroid-frame {
       background: #ffffff;
       padding: 16px 16px 36px;
@@ -499,10 +594,12 @@
       max-width: 380px;
       width: 100%;
     }
+
     .polaroid-frame:hover {
       transform: rotate(0deg) scale(1.03) translateY(-8px);
       box-shadow: 16px 16px 0px var(--yellow);
     }
+
     .polaroid-img-wrapper {
       position: relative;
       overflow: hidden;
@@ -511,6 +608,7 @@
       background: #000;
       aspect-ratio: 4/5;
     }
+
     .polaroid-img {
       width: 100%;
       height: 100%;
@@ -520,9 +618,11 @@
       transition: transform 0.4s ease;
       filter: contrast(106%) saturate(108%);
     }
+
     .polaroid-frame:hover .polaroid-img {
       transform: scale(1.05);
     }
+
     .polaroid-caption {
       font-family: var(--font-hand);
       font-size: 1.7rem;
@@ -539,16 +639,19 @@
       z-index: 10;
       font-size: 0.85rem;
     }
+
     .pin-1 {
       top: -20px;
       left: -15px;
       transform: rotate(-14deg);
     }
+
     .pin-2 {
       bottom: 20px;
       right: -25px;
       transform: rotate(12deg);
     }
+
     .pin-3 {
       top: 40%;
       left: -35px;
@@ -567,6 +670,7 @@
       gap: 14px;
       box-shadow: 4px 4px 0px var(--lime);
     }
+
     .sound-btn {
       background: var(--lime);
       color: #000;
@@ -580,6 +684,7 @@
       box-shadow: 2px 2px 0px #000;
       transition: transform 0.1s;
     }
+
     .sound-btn:active {
       transform: translate(2px, 2px);
       box-shadow: none;
@@ -592,6 +697,7 @@
       gap: 10px;
       margin-top: 10px;
     }
+
     .tech-bubble {
       display: inline-flex;
       align-items: center;
@@ -604,9 +710,10 @@
       font-size: 0.86rem;
       font-weight: 700;
       color: var(--fg);
-      box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+      box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
       transition: all 0.2s;
     }
+
     .tech-bubble:hover {
       transform: translateY(-4px) rotate(2deg);
       border-color: var(--pink);
@@ -619,9 +726,11 @@
       padding: 70px 0;
       position: relative;
     }
+
     .section-headline {
       margin-bottom: 40px;
     }
+
     .section-headline h2 {
       font-family: var(--font-display);
       font-size: clamp(2.2rem, 4.8vw, 3.2rem);
@@ -636,6 +745,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 26px;
     }
+
     .funky-card {
       background: var(--bg-card);
       border: 2.5px solid var(--border);
@@ -649,38 +759,58 @@
       text-decoration: none;
       color: inherit;
     }
-    .funky-card:nth-child(2) { box-shadow: var(--brutal-shadow-cyan); }
-    .funky-card:nth-child(3) { box-shadow: var(--brutal-shadow); }
-    .funky-card:nth-child(4) { box-shadow: var(--brutal-shadow-purple); }
-    .funky-card:nth-child(5) { box-shadow: var(--brutal-shadow-pink); }
-    .funky-card:nth-child(6) { box-shadow: var(--brutal-shadow-cyan); }
+
+    .funky-card:nth-child(2) {
+      box-shadow: var(--brutal-shadow-cyan);
+    }
+
+    .funky-card:nth-child(3) {
+      box-shadow: var(--brutal-shadow);
+    }
+
+    .funky-card:nth-child(4) {
+      box-shadow: var(--brutal-shadow-purple);
+    }
+
+    .funky-card:nth-child(5) {
+      box-shadow: var(--brutal-shadow-pink);
+    }
+
+    .funky-card:nth-child(6) {
+      box-shadow: var(--brutal-shadow-cyan);
+    }
 
     .funky-card:hover {
       transform: translate(-5px, -5px) rotate(-1deg);
       box-shadow: 10px 10px 0px #000;
       border-color: var(--yellow);
     }
+
     .card-badge-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
     }
+
     .card-emoji-icon {
       font-size: 2.4rem;
       margin-bottom: 14px;
       display: inline-block;
       transition: transform 0.3s;
     }
+
     .funky-card:hover .card-emoji-icon {
       transform: scale(1.25) rotate(10deg);
     }
+
     .funky-card h3 {
       font-family: var(--font-display);
       font-size: 1.38rem;
       font-weight: 800;
       margin-bottom: 10px;
     }
+
     .funky-card p {
       color: var(--fg-muted);
       font-size: 0.95rem;
@@ -688,11 +818,13 @@
       flex-grow: 1;
       margin-bottom: 20px;
     }
+
     .pill-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
     }
+
     .card-tag {
       font-family: var(--font-mono);
       font-size: 0.74rem;
@@ -711,6 +843,7 @@
       flex-wrap: wrap;
       margin-bottom: 32px;
     }
+
     .filter-pill {
       font-family: var(--font-display);
       font-weight: 800;
@@ -724,7 +857,9 @@
       box-shadow: 3px 3px 0px var(--border);
       transition: all 0.2s;
     }
-    .filter-pill.active, .filter-pill:hover {
+
+    .filter-pill.active,
+    .filter-pill:hover {
       background: var(--yellow);
       color: #000;
       border-color: #000;
@@ -744,10 +879,12 @@
       gap: 50px;
       align-items: center;
     }
+
     .about-photo-wrapper {
       position: relative;
       text-align: center;
     }
+
     .about-framed-photo {
       width: 270px;
       height: 330px;
@@ -759,6 +896,7 @@
       transform: rotate(-3deg);
       transition: transform 0.3s;
     }
+
     .about-framed-photo:hover {
       transform: rotate(0deg) scale(1.04);
       box-shadow: 12px 12px 0px var(--pink);
@@ -771,12 +909,14 @@
       margin-bottom: 18px;
       letter-spacing: -0.02em;
     }
+
     .about-text p {
       color: var(--fg-muted);
       font-size: 1.05rem;
       line-height: 1.7;
       margin-bottom: 18px;
     }
+
     .about-text strong {
       color: var(--fg);
     }
@@ -811,6 +951,7 @@
       box-shadow: 12px 12px 0px var(--yellow);
       color: #fff;
     }
+
     .funky-cta h2 {
       font-family: var(--font-display);
       font-size: clamp(2.4rem, 5.5vw, 3.8rem);
@@ -818,6 +959,7 @@
       margin-bottom: 16px;
       letter-spacing: -0.04em;
     }
+
     .funky-cta p {
       font-size: 1.15rem;
       max-width: 580px;
@@ -834,6 +976,7 @@
       font-size: 0.88rem;
       color: var(--fg-muted);
     }
+
     footer .footer-inner {
       display: flex;
       justify-content: space-between;
@@ -861,11 +1004,13 @@
       display: none;
       transition: all 0.2s;
     }
+
     .back-to-top.show {
       display: flex;
       align-items: center;
       gap: 8px;
     }
+
     .back-to-top:hover {
       background: var(--pink);
       color: #fff;
@@ -880,23 +1025,66 @@
         gap: 40px;
         text-align: center;
       }
-      .hero-speech-bubble::before { display: none; }
-      .hero-btns, .chips-cloud { justify-content: center; }
-      .cards-grid { grid-template-columns: repeat(2, 1fr); }
-      .about-box { grid-template-columns: 1fr; text-align: center; }
-      .learning-stickers { justify-content: center; }
-      .duck-callout { text-align: left; }
+
+      .hero-speech-bubble::before {
+        display: none;
+      }
+
+      .hero-btns,
+      .chips-cloud {
+        justify-content: center;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .learning-stickers {
+        justify-content: center;
+      }
+
+      .duck-callout {
+        text-align: left;
+      }
     }
+
     @media (max-width: 680px) {
-      .nav-links, .nav-actions .btn-funky { display: none; }
-      .hamburger { display: grid; }
-      .cards-grid { grid-template-columns: 1fr; }
-      .custom-cursor, .custom-cursor-follower { display: none; }
-      nav.navbar { top: 8px; margin: 0 12px 20px; }
-      .polaroid-frame { max-width: 320px; }
+
+      .nav-links,
+      .nav-actions .btn-funky {
+        display: none;
+      }
+
+      .hamburger {
+        display: grid;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .custom-cursor,
+      .custom-cursor-follower {
+        display: none;
+      }
+
+      nav.navbar {
+        top: 8px;
+        margin: 0 12px 20px;
+      }
+
+      .polaroid-frame {
+        max-width: 320px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Custom Funky Interactive Mouse Follower -->
@@ -965,11 +1153,13 @@
 
         <h1 class="hero-title">
           Yo, I’m <span class="funky-highlight-pink">Pravakar</span>.<br>
-          I make computers do <span class="typed-wrapper" id="typed-funky">cool things</span><span class="typing-cursor">&nbsp;</span>
+          I make computers do <span class="typed-wrapper" id="typed-funky">cool things</span><span
+            class="typing-cursor">&nbsp;</span>
         </h1>
 
         <div class="hero-speech-bubble">
-          “I build full-stack web architectures, tinker with graph databases, and engineer resilient backend APIs that solve messy real-world problems.”
+          “I build full-stack web architectures, tinker with graph databases, and engineer resilient backend APIs that
+          solve messy real-world problems.”
         </div>
 
         <div class="hero-btns">
@@ -979,7 +1169,8 @@
           <a class="btn-funky btn-funky-yellow" href="https://github.com/Pravakar-web" target="_blank" rel="noopener">
             <i class="fa-brands fa-github"></i> GitHub Profile ↗
           </a>
-          <a class="btn-funky btn-funky-cyan" href="https://www.linkedin.com/in/pravakar-gurung/" target="_blank" rel="noopener">
+          <a class="btn-funky btn-funky-cyan" href="https://www.linkedin.com/in/pravakar-gurung/" target="_blank"
+            rel="noopener">
             <i class="fa-brands fa-linkedin"></i> LinkedIn ↗
           </a>
         </div>
@@ -991,7 +1182,8 @@
           <span class="tech-bubble"><i class="fa-brands fa-react" style="color:#00f0ff"></i> React</span>
           <span class="tech-bubble"><i class="fa-solid fa-server" style="color:#10ffa0"></i> FastAPI</span>
           <span class="tech-bubble"><i class="fa-solid fa-cubes" style="color:#ff2a85"></i> Django</span>
-          <span class="tech-bubble"><i class="fa-solid fa-diagram-project" style="color:#00f0ff"></i> Neo4j Graphs</span>
+          <span class="tech-bubble"><i class="fa-solid fa-diagram-project" style="color:#00f0ff"></i> Neo4j
+            Graphs</span>
           <span class="tech-bubble"><i class="fa-solid fa-database" style="color:#ff6b35"></i> SQL &amp; Mongo</span>
         </div>
 
@@ -1025,7 +1217,8 @@
       <div class="section-headline">
         <span class="sticker sticker-yellow">// 01 Flagship Works</span>
         <h2>Big League Builds</h2>
-        <p style="color:var(--fg-muted); font-size:1.05rem;">National-level hackathons and scalable multi-user platforms.</p>
+        <p style="color:var(--fg-muted); font-size:1.05rem;">National-level hackathons and scalable multi-user
+          platforms.</p>
       </div>
 
       <div class="cards-grid">
@@ -1037,7 +1230,8 @@
           </div>
           <span class="card-emoji-icon">🕸️</span>
           <h3>Criminal Network Analysis</h3>
-          <p>AI graph analysis intelligence system developed for NCRB. Maps complex relations between suspects, associates, and syndicates to automatically highlight unseen crime rings.</p>
+          <p>AI graph analysis intelligence system developed for NCRB. Maps complex relations between suspects,
+            associates, and syndicates to automatically highlight unseen crime rings.</p>
           <div class="pill-tags">
             <span class="card-tag">FastAPI</span>
             <span class="card-tag">React</span>
@@ -1054,7 +1248,8 @@
           </div>
           <span class="card-emoji-icon">🏫</span>
           <h3>Smart Campus Complaints</h3>
-          <p>Complete complaint ticketing, dynamic resolution pipeline, and campus issue tracker with automated tech assignments and SLA management.</p>
+          <p>Complete complaint ticketing, dynamic resolution pipeline, and campus issue tracker with automated tech
+            assignments and SLA management.</p>
           <div class="pill-tags">
             <span class="card-tag">React</span>
             <span class="card-tag">Django</span>
@@ -1071,7 +1266,8 @@
           </div>
           <span class="card-emoji-icon">🤝</span>
           <h3>Handover Platform</h3>
-          <p>Collaborative multi-sided web platform bringing university students, faculty, and local businesses together into a unified opportunity hub.</p>
+          <p>Collaborative multi-sided web platform bringing university students, faculty, and local businesses together
+            into a unified opportunity hub.</p>
           <div class="pill-tags">
             <span class="card-tag">Web Ecosystem</span>
             <span class="card-tag">Backend Architecture</span>
@@ -1088,7 +1284,8 @@
       <div class="section-headline">
         <span class="sticker sticker-cyan">// 02 Open Source</span>
         <h2>Code Labs &amp; Repositories</h2>
-        <p style="color:var(--fg-muted); font-size:1.05rem;">Interactive web toys, clean UI layouts, and logic experiments.</p>
+        <p style="color:var(--fg-muted); font-size:1.05rem;">Interactive web toys, clean UI layouts, and logic
+          experiments.</p>
       </div>
 
       <!-- Filters -->
@@ -1100,14 +1297,16 @@
 
       <div class="cards-grid">
         <!-- Repo 1 -->
-        <a class="funky-card" data-category="css" href="https://github.com/Pravakar-web/Aventra" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="css" href="https://github.com/Pravakar-web/Aventra" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-yellow">UI / UX</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
           <span class="card-emoji-icon">🧭</span>
           <h3>Aventra</h3>
-          <p>Responsive frontend landing portal engineered with sleek geometry, custom grid layouts, and polished responsive typography.</p>
+          <p>Responsive frontend landing portal engineered with sleek geometry, custom grid layouts, and polished
+            responsive typography.</p>
           <div class="pill-tags">
             <span class="card-tag">HTML5</span>
             <span class="card-tag">Modern CSS</span>
@@ -1115,14 +1314,16 @@
         </a>
 
         <!-- Repo 2 -->
-        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/Book-Nest" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/Book-Nest" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-pink">App</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
           <span class="card-emoji-icon">📚</span>
           <h3>Book-Nest</h3>
-          <p>A book organizer and reader diary to catalog and discover titles with instant search filtering and active browser storage.</p>
+          <p>A book organizer and reader diary to catalog and discover titles with instant search filtering and active
+            browser storage.</p>
           <div class="pill-tags">
             <span class="card-tag">JavaScript</span>
             <span class="card-tag">DOM Mastery</span>
@@ -1130,7 +1331,8 @@
         </a>
 
         <!-- Repo 3 -->
-        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/case360" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/case360" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-lime">Dashboard</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -1145,14 +1347,16 @@
         </a>
 
         <!-- Repo 4 -->
-        <a class="funky-card" data-category="css" href="https://github.com/Pravakar-web/Product-Info" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="css" href="https://github.com/Pravakar-web/Product-Info" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-cyan">Layout</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
           <span class="card-emoji-icon">🛍️</span>
           <h3>Product-Info</h3>
-          <p>Interactive product showcase with dynamic color swatch selectors, responsive cart states, and flex-box magic.</p>
+          <p>Interactive product showcase with dynamic color swatch selectors, responsive cart states, and flex-box
+            magic.</p>
           <div class="pill-tags">
             <span class="card-tag">CSS Grid</span>
             <span class="card-tag">E-Commerce UX</span>
@@ -1160,14 +1364,16 @@
         </a>
 
         <!-- Repo 5 -->
-        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/RSP-Game" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/RSP-Game" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-yellow">Mini Game</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
           <span class="card-emoji-icon">✊</span>
           <h3>RSP-Game</h3>
-          <p>Classic Rock-Paper-Scissors game featuring streak tracking, instant randomized opponent logic, and arcade animations.</p>
+          <p>Classic Rock-Paper-Scissors game featuring streak tracking, instant randomized opponent logic, and arcade
+            animations.</p>
           <div class="pill-tags">
             <span class="card-tag">JavaScript</span>
             <span class="card-tag">Game Logic</span>
@@ -1175,14 +1381,16 @@
         </a>
 
         <!-- Repo 6 -->
-        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/calculator" target="_blank" rel="noopener">
+        <a class="funky-card" data-category="js" href="https://github.com/Pravakar-web/calculator" target="_blank"
+          rel="noopener">
           <div class="card-badge-row">
             <span class="sticker sticker-pink">Utility</span>
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </div>
           <span class="card-emoji-icon">🧮</span>
           <h3>Calculator</h3>
-          <p>Functional scientific calculator practicing strict operational precedence handling, keyboard listener bindings, and clear memory states.</p>
+          <p>Functional scientific calculator practicing strict operational precedence handling, keyboard listener
+            bindings, and clear memory states.</p>
           <div class="pill-tags">
             <span class="card-tag">JavaScript</span>
             <span class="card-tag">Event Handlers</span>
@@ -1191,7 +1399,8 @@
       </div>
 
       <div style="text-align: center; margin-top: 40px;">
-        <a class="btn-funky btn-funky-outline" href="https://github.com/Pravakar-web?tab=repositories" target="_blank" rel="noopener">
+        <a class="btn-funky btn-funky-outline" href="https://github.com/Pravakar-web?tab=repositories" target="_blank"
+          rel="noopener">
           <i class="fa-brands fa-github"></i> View All 14 Repositories on GitHub &rarr;
         </a>
       </div>
@@ -1213,10 +1422,13 @@
           <span class="sticker sticker-lime">// 03 The Human Behind The Code</span>
           <h3>Hey, I'm Pravakar Gurung!</h3>
           <p>
-            I’m a <strong>Software Engineering scholar at Jain (Deemed-to-be) University</strong>. I love turning chaotic concepts into smooth, responsive apps and architecting rock-solid backend services.
+            I’m a <strong>Software Engineering scholar at Jain (Deemed-to-be) University</strong>. I love turning
+            chaotic concepts into smooth, responsive apps and architecting rock-solid backend services.
           </p>
           <p>
-            When I'm not leading hackathon sprints (like <strong>Smart India Hackathon 2026</strong>), you’ll find me geeking out over <strong>graph databases (Neo4j)</strong>, exploring distributed systems, or experimenting with frontend UI styles.
+            When I'm not leading hackathon sprints (like <strong>Smart India Hackathon 2026</strong>), you’ll find me
+            geeking out over <strong>graph databases (Neo4j)</strong>, exploring distributed systems, or experimenting
+            with frontend UI styles.
           </p>
 
           <strong style="font-family:var(--font-display); font-size:1.05rem;">Currently leveling up in:</strong>
@@ -1229,7 +1441,8 @@
 
           <div class="duck-callout">
             <span style="font-size: 1.6rem;">🦆</span>
-            <div><strong>Rubber Ducking Champion:</strong> I debug with supersonic speed when I explain my logic out loud to an imaginary duck (or anyone within earshot).</div>
+            <div><strong>Rubber Ducking Champion:</strong> I debug with supersonic speed when I explain my logic out
+              loud to an imaginary duck (or anyone within earshot).</div>
           </div>
         </div>
       </div>
@@ -1243,11 +1456,13 @@
         <span class="sticker sticker-yellow" style="margin-bottom: 14px;">// Let's connect</span>
         <h2>Let's build something <br><span style="color:var(--yellow)">unforgettable.</span></h2>
         <p>
-          Got a hackathon team needing a lead/builder, an open-source repo to conquer, or an opportunity to build cool stuff? Drop a hello!
+          Got a hackathon team needing a lead/builder, an open-source repo to conquer, or an opportunity to build cool
+          stuff? Drop a hello!
         </p>
 
         <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px;">
-          <a class="btn-funky btn-funky-yellow" href="https://www.linkedin.com/in/pravakar-gurung/" target="_blank" rel="noopener">
+          <a class="btn-funky btn-funky-yellow" href="https://www.linkedin.com/in/pravakar-gurung/" target="_blank"
+            rel="noopener">
             <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
           </a>
           <a class="btn-funky btn-funky-pink" href="https://github.com/Pravakar-web" target="_blank" rel="noopener">
@@ -1265,7 +1480,8 @@
   <footer>
     <div class="w footer-inner">
       <div>✦ Crafted with funky energy by <strong>Pravakar Gurung</strong> © 2026.</div>
-      <div><a href="#navbar" style="color:var(--yellow); text-decoration:none; font-weight:700;">Take me to top ↑</a></div>
+      <div><a href="#navbar" style="color:var(--yellow); text-decoration:none; font-weight:700;">Take me to top ↑</a>
+      </div>
     </div>
   </footer>
 
@@ -1440,4 +1656,5 @@
     });
   </script>
 </body>
+
 </html>
